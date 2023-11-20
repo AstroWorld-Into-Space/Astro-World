@@ -98,7 +98,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 10%;
-  background-color: #272822;
 }
 @media screen and (max-width: 600px) {
   #mainWrapper .containerWrapper {
