@@ -105,10 +105,17 @@ body {
 
   .containerWrapper {
     padding: 0 8ch;
-    background-image: url("/images/4740032_38604.jpg");
+    background-image: url("/Astro-World/images/4740032_38604.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 10%;
+  }
+
+  @media screen and (max-width: 600px) {
+    .containerWrapper {
+      padding-left: 2ch;
+      padding-right: 2ch;
+    }
   }
 
   .container {
@@ -119,6 +126,8 @@ body {
   main {
     display: block;
   }
+
+  // --------------- Section One -----------------
 
   .sectionOne {
     position: relative;
@@ -138,6 +147,14 @@ body {
     }
   }
 
+  @media screen and (max-width: 600px) {
+    #profileFoto {
+      width: 150px;
+      height: 90px;
+      margin-right: 2ch;
+    }
+  }
+
   .paragraphone h1 {
     font-size: 20px;
     font-weight: 800;
@@ -153,6 +170,27 @@ body {
       font-size: 16px;
       margin-top: 1.5rem;
       max-width: 45ch;
+    }
+    .profileBio1 {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .profileBio {
+      display: none;
+    }
+    .profileBio1 {
+      display: block;
+      font-size: 14px;
+      margin-top: 2ch;
+      max-width: 40ch;
+    }
+    .profileTitle {
+      font-size: 14px;
+    }
+    .paragraphone h1 {
+      font-size: 17.5px;
     }
   }
 
@@ -177,6 +215,8 @@ body {
   }
 }
 
+// ----------------- Section 2 ----------
+
 .sectionTwo {
   background-color: #fff;
   padding: 2ch;
@@ -200,6 +240,24 @@ body {
     height: 96px;
     cursor: pointer;
     margin-right: 2ch;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .img1 {
+    width: 189.7px;
+    height: 127px;
+    cursor: pointer;
+  }
+  .contentOneWrapper {
+    margin-bottom: 1rem;
+  }
+  .contentOneHeader {
+    font-size: 15.75px !important;
+  }
+  .contentOneBody {
+    font-size: 14px !important;
   }
 }
 
@@ -242,72 +300,31 @@ body {
   color: greenyellow;
 }
 
-.sectionThree > h2 {
-  margin-bottom: 2ch;
-}
+// ----------- Footer ----------------
 
-.contentTwoContainer {
-  margin-bottom: 2ch;
-}
-
-@media screen and (min-width: 600px) {
-  .contentTwoWrapper {
-    display: flex;
-    flex-direction: row;
-  }
-  .xSpaceImg {
-    width: 98px;
-    height: 96px;
-    margin-right: 2ch;
-    cursor: pointer;
-  }
-  .contentTwoText {
-    max-width: 55ch;
-  }
-  .spaceTimeImg {
-    width: 98px;
-    height: 96px;
-    margin-right: 2ch;
-    cursor: pointer;
-  }
-}
-
-.projectLink {
-  text-decoration: none;
-}
-
-@media screen and (min-width: 600px) {
-  .projectLink2 {
-    font-size: 18px;
-    cursor: pointer;
-  }
-}
-
-.viewProjects {
-  color: #fff;
-  text-decoration: none;
-}
-
-.viewProjects:hover {
-  color: greenyellow;
-  text-decoration: underline;
-}
-
-.viewProjectsIcon {
-  color: greenyellow;
+footer {
+  background-color: #fff;
+    padding: 1ch;
+    max-width: 90ch;
+    border-radius: 6px;
 }
 
 @media screen and (min-width: 600px) {
   footer {
-    background-color: #fff;
-    padding: 1ch;
-    max-width: 90ch;
     display: flex;
     justify-content: space-between;
-    border-radius: 6px;
   }
   li {
     display: inline-block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  footer {
+    flex-direction: column;
+  }
+  .dot {
+    display: none;
   }
 }
 
