@@ -45,7 +45,7 @@ body {
   }
 }
 #mainWrapper .navLink {
-  min-width: 7.5rem;
+  min-width: 8.5rem;
   background-color: #34352f;
   color: #ccccc7;
   border: 0.5px thin #272822;
@@ -58,6 +58,9 @@ body {
 @media screen and (max-width: 600px) {
   #mainWrapper .navLink {
     min-width: 25%;
+  }
+  #mainWrapper body {
+    font-size: 70%;
   }
 }
 #mainWrapper .navLinks {
@@ -78,6 +81,7 @@ body {
   #mainWrapper .navLinks {
     font-size: 13.2708px;
     padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 }
 #mainWrapper .close {

@@ -6,60 +6,136 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Astro World</title>
     <link rel="stylesheet" href="css/project.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
 
-  <div id="container">
-    
-    <h1><a href="index.html"> Projects</a></h1>
-    <p>
-      As an aspiring astronomer, your willingness to research makes you stand out
-      and i intend doing that, as an undergraduate student, i didn't have the opportunity 
-      to involve myself in astronomical research, my research was concentrated on solid state physics.
-      I have two research work on solid state physics.
-    </p>
+  <body>
+    <div id="mainWrapper">
+      <header>
+        <nav class="navBar">
+          <a href="index.html" class="navLink"
+            ><div class="navLinks">home</div></a
+          >
+          <a href="projects.html" class="navLink" |
+            ><div class="navLinks navLinksHome">Projects</div></a
+          >
+          <a href="resources.html" class="navLink"
+            ><div class="navLinks">Resources</div></a
+          >
+        </nav>
+      </header>
 
-    <div class="Prjbox">
-      <img src="images\WhatsApp Image 2023-08-02 at 10.21.17.jpg" alt="" />
-      <p>
-        My first work being the <a href="#" target="_blank">Effect of Deposition-Time On Chemical Bath Deposited Manganese-Doped Zinc Selenide Films.</a>
-        Manganese doped zinc selenide (ZnSe:Mn) films were deposited on glass substrates using the simple chemical bath deposition (CBD) method in an alkaline medium at a bath temperature of 90 degree Celcius  
-        and deposition time was varied from 30 to 90 minutes. 
-        The films were characterized to obtain the optical properties and structural properties, microstructural properties and elemental properties
-        using the Cary 300 UV/Visible Spectrophotometer- at normal incidence of light in the wavelength range of 200nm-800nm and the Rigaku miniflex 630 diffractometer, respectively.
-      </p>
-    </div>
-
-    <hr>
-
-    <div class="Prjbox">
-      <img src="images\WhatsApp Image 2023-08-02 at 10.21.19.jpg" alt="" />
-      <p>My Second work being the <a href="#" target="_blank">Effect of Molarity Concentration On Chemical Bath Deposited Manganese-Doped Zinc Selenide Films. </a>
-         This is a co-joint work. Here Manganese doped zinc selenide (ZnSe:Mn) films were deposited on glass substrates 
-         using the simple chemical bath deposition (CBD) method in an alkaline medium at a bath temperature of 90 degree Celcius  
-         and molarity concentration was varied from 0.05 mol to 0.1 mol. 
-         The films were characterized to obtain the optical properties and structural properties, microstructural properties and elemental properties  
-         using the Cary 300 UV/Visible Spectrophotometer- at normal incidence of light in the wavelength range of 200nm-800nm and the Rigaku miniflex 630 diffractometer, respectively.
-      
-      </p>
-    </div>
-    
-    <p>
-      With my enrollement into graduate school, i intend to work on using Gravitational lensing to study 
-      <a href="#"> how the efficiency of jet and wind-driven feedback from supermassive black holes influences the star formation process in dense galaxy clusters. </a> 
-      as I know there are question that can be answered using this technique.
-    </p>
-    <p> you can get to know more about my publications <a href="#"> here</a></p>
-
-  </div>
+      <div class="containerWrapper">
+        <div class="container">
+          <main>
+            <div class="pContainer">
+              <div class="pWrapper">
+                <h2>Projects</h2>
+                <p>
+                  As an aspiring astronomer, your willingness to research makes
+                  you stand out and i intend doing that, as an undergraduate
+                  student, i didn't have the opportunity to involve myself in
+                  astronomical research, my research was concentrated on solid
+                  state physics. I have two research work on solid state
+                  physics.
+                </p>
+              </div>
+              <section class="pBox">
+                <div class="prjBox">
+                  <div class="pImgBox">
+                    <img
+                    src="images\WhatsApp Image 2023-08-02 at 10.21.17.jpg"
+                    alt=""
+                  />
+                  </div>
+                  <div class="pBoxContent">
+                    <h3>
+                      <a href="#" target="_blank"
+                        >Effect of Deposition-Time On Chemical Bath Deposited
+                        Manganese-Doped Zinc Selenide Films.</a
+                      >
+                  </h3>
+                  <p class="pBoxSummary">
+                    Manganese doped zinc selenide (ZnSe:Mn) films were deposited
+                      on glass substrates using the simple chemical bath deposition
+                      (CBD) method in an alkaline medium at a bath temperature of 90
+                      degree Celcius and deposition time was varied from 30 to 90
+                      minutes. The films were characterized to obtain the optical
+                      properties and structural properties, microstructural
+                      properties and elemental properties using the Cary 300
+                      UV/Visible Spectrophotometer- at normal incidence of light in
+                      the wavelength range of 200nm-800nm and the Rigaku miniflex
+                      630 diffractometer, respectively.
+                  </p>
+                  </div>
+                </div>
   
-  <footer>
-    <ul>
-      <li><a href="https://github.com/hdodov" class="footerLink">GitHub</a> <span class="dot">&#8226;</span></li>
-      <li><a href="https://twitter.com/yandodov" class="footerLink">Twitter</a> <span class="dot">&#8226;</span></li>
-      <li><a href="https://www.linkedin.com/in/yandodov/" class="footerLink">LinkedIn</a> <span class="dot">&#8226;</span></li>
-      <li><a href="https://www.instagram.com/yandodov/" class="footerLink">Instagram</a> <span class="dot">&#8226;</span></li>
-      <li><a href="https://www.instagram.com/yandodov/" class="footerLink">ORCID</a></li>
-    </ul>
-  </footer>    
-</body>
+                <div class="prjBox">
+                  <div class="pImgBox">
+                    <img
+                    src="images\WhatsApp Image 2023-08-02 at 10.21.19.jpg"
+                    alt=""
+                  />
+                  </div>
+                  <div class="pBoxContent">
+                    <h3>
+                      <a href="#" target="_blank"
+                        >Effect of Molarity Concentration On Chemical Bath Deposited
+                        Manganese-Doped Zinc Selenide Films.
+                      </a>
+                    </h3>
+                      <p class="pBoxSummary">
+                        This is a co-joint work. Here Manganese doped zinc selenide
+                      (ZnSe:Mn) films were deposited on glass substrates using the
+                      simple chemical bath deposition (CBD) method in an alkaline
+                      medium at a bath temperature of 90 degree Celcius and molarity
+                      concentration was varied from 0.05 mol to 0.1 mol. The films
+                      were characterized to obtain the optical properties and
+                      structural properties, microstructural properties and
+                      elemental properties using the Cary 300 UV/Visible
+                      Spectrophotometer- at normal incidence of light in the
+                      wavelength range of 200nm-800nm and the Rigaku miniflex 630
+                      diffractometer, respectively.
+                      </p>
+                  </div>
+                </div>
+  
+                <hr class="seperator" />
+
+                <div class="footNote">
+                  <p>
+                    With my enrollement into graduate school, i intend to work on
+                    using Gravitational lensing to study
+                    <a href="#">
+                      how the efficiency of jet and wind-driven feedback from
+                      supermassive black holes influences the star formation process
+                      in dense galaxy clusters.
+                    </a>
+                    as I know there are question that can be answered using this
+                    technique.
+                  </p>
+                  <p>
+                    you can get to know more about my publications
+                    <a href="#"> here</a>
+                  </p>
+                </div>
+              </div>
+              </section>
+
+              <hr class="seperator" />
+
+              <footer>
+                <ul>
+                  <li><a href="https://github.com/hdodov" class="footerLink">GitHub</a> <span class="dot">&#8226;</span></li>
+                  <li><a href="https://twitter.com/yandodov" class="footerLink">Twitter</a> <span class="dot">&#8226;</span></li>
+                  <li><a href="https://www.linkedin.com/in/yandodov/" class="footerLink">LinkedIn</a> <span class="dot">&#8226;</span></li>
+                  <li><a href="https://www.instagram.com/yandodov/" class="footerLink">Instagram</a> <span class="dot">&#8226;</span></li>
+                  <li><a href="https://www.instagram.com/yandodov/" class="footerLink">ORCID</a></li>
+              </ul>
+              </footer>
+          </main>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

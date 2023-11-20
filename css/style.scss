@@ -49,7 +49,7 @@ body {
   }
 
   .navLink {
-    min-width: 7.5rem;
+    min-width: 8.5rem;
     background-color: #34352f;
     color: #ccccc7;
     border: 0.5px thin #272822;
@@ -65,9 +65,9 @@ body {
     .navLink {
       min-width: 25%;
     }
-    // .navLinksHome {
-    //   min-width: 70% !important;
-    // }
+    body {
+      font-size: 70%;
+    }
   }
 
   .navLinks {
@@ -90,6 +90,7 @@ body {
     .navLinks {
       font-size: 13.2708px;
       padding-left: 0.5rem;
+      padding-right: 0.5rem;
     }
   }
 

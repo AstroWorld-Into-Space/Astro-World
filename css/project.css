@@ -1,124 +1,71 @@
-body {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  margin: 10px auto;
-  width: 900px;
-  background-color: rgb(104, 175, 175);
-}
-#container {
-  background-color: #fff;
-  padding: 10px;
-  border-radius: 6px;
-  margin-bottom: 10px;
+/* --------- Section One ---------- */
+
+.pContainer {
+  position: relative;
+  margin-bottom: 1.5rem;
 }
 
-h1{margin: 0%;}
-h1 a, p  {
-  color: #000;
+.pWrapper {
+  margin-bottom: 2ch;
+}
 
+.pWrapper h2 {
+  font-size: 25px;
+  font-weight: 700;
 }
-h1 a:hover {
-  text-decoration: none;
+
+.pWrapper p {
+  color: #cfcfc2;
+  font-size: 16px;
 }
-a {
-  text-decoration: none;
-  color: greenyellow;
-}
-a:hover {
-  text-decoration: underline;
-}
-.Prjbox {
+
+.prjBox {
   display: flex;
-  width: 870px;
-  background-color: rgb(40, 57, 134);
-  border-radius: 7px;
+  padding: 2ch;
+  background-color: #fff;
+  color: #000 !important;
+  border: none;
+  border-radius: 6px;
+  margin-bottom: 2ch;
 }
-.Prjbox img {
+
+.pBoxContent h3 a {
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #272822;
+}
+
+.pBoxContent a:hover {
+  color: #4e94ce;
+}
+
+.pImgBox img {
   width: 200px;
-  height: 200px;
-  display: inline-block;
-  padding: 10px;
+  height: 150px;
+  margin-right: 2ch;
 }
-.Prjbox p {
-  color: #fff;
-  font-size: 15px;
+
+.pBoxSummary {
+  font-size: 16px;
   line-height: 24px;
-}
-footer {
-  background-color: #fff;
-  padding: 1ch;
-  max-width: 100ch;
-  display: flex;
-  justify-content: space-between;
-  border-radius: 6px;
-}
-li {
-  display: inline-block;
-}
-ul {
-  list-style: none;
+  margin-top: 1rem;
 }
 
-.footerLink {
-  font-size: 16px;
-  color: #272822;
-  text-decoration: none;
-}
-
-.footerLink:hover {
-  color: greenyellow;
-  text-decoration: underline;
-}
-
-.dot {
-  color: #272822;
-}
 @media screen and (max-width: 600px) {
-  #container {
-    width: 700px;
-    margin: auto;
-    margin-bottom: 10px;
+  .pWrapper p {
+    font-size: 14px;
   }
-  .Prjbox {
-    display: flex;
-    width: 690px;
-    background-color: rgb(40, 57, 134);
-    border-radius: 7px;
+  .pBoxContent h3 a {
+    font-size: 18px;
   }
-  .Prjbox img {
-    width: 200px;
-    height: 250px;
-    display: inline-block;
-    padding: 10px;
+  .prjBox {
+    flex-direction: column;
   }
-  footer {
-    background-color: #fff;
-    padding: 1ch;
-    max-width: 79ch;
-    display: flex;
-    justify-content: space-between;
-    border-radius: 6px;
-    margin: auto;
-    
+  .pBoxSummary {
+    font-size: 14px;
   }
-  li {
-    display: inline-block;
+  .footNote p  {
+    font-size: 14px;
   }
-}
-ul {
-  list-style: none;
-}
-
-.footerLink {
-  font-size: 16px;
-  color: #272822;
-  text-decoration: none;
-}
-
-.footerLink:hover {
-  color: greenyellow;
-  text-decoration: underline;
-}
-
-.dot {
-  color: #272822;
 }
