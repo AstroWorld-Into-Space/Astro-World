@@ -1,133 +1,70 @@
-body{
-    background-color: #eaeaea;
-    font-family: system-ui;
-   }
-   p{
-    text-align: center;
-    padding: 10px;
-   }
-   #downloadables, #SecondRow{
-    display: flex;
-    justify-content: space-around;
-    padding: 10px;
-    margin: 5px;
-    flex-direction: row;
-    justify-content: center;
-   }
-   .dwnbtn{
-    text-align: center;
-   }
-   #Firstbox, #Secondbox, #Thirdbox, #Fourthbox, #Fifthbox {
-    padding: 10px;
-    color: black;
-    margin: 4px;
-    flex: 1;
-    border: 2px solid white;
+/* ----------- Section One -------------- */
 
-   }
-   section h1{
-    text-align: center;
-    font-size: 25px;
-    font-weight: bold;
-    color: rgb(43, 148, 148);
-   }
-   .download-btn, .download-btnn, .download-btnnn{
-    outline: none;
-    border: none;
-    color: #fff;
-    display: flex;
-    cursor: pointer;
-    padding: 16px 25px;
-    border-radius: 6px;
-    align-items: center;
-    white-space: nowrap;
-    background: #52ac2f;
-    transition: all 0.2s ease;
-    display: inline;
-    align-self: center;
-   }
-   .download-btn:hover, .download-btnn:hover, .download-btnnn:hover{
-    background: #52b971;
-   }
-   .download-btn.timer, .download-btnn.timer, .download-btnnn.timer{
-    color: #000;
-    background: none;
-    transition: none;
-    font-size: 1rem;
-    pointer-events: none;
-   }
-   .download-btn.timer b, .download-btnn.timer b, .download-btnnn.timer b{
-    color: #55af61;
-    padding: 0 8px;
-   }
-   .download-btn .icon, .download-btnn .icon, .download-btnnn .icon{
-    font-size: 1rem;
-   }
-   .download-btn .text, .download-btnn .text, .download-btnnn .text{
-    font-size: 1rem;
-    padding-left: 19px;
-   }
-   footer {
-    background-color: #fff;
-    padding: 1ch;
-    max-width: 160ch;
-    height: 5ch;
-    display: flex;
-    justify-content: space-between;
-    border-radius: 6px;
-  }
-  li {
-    display: inline-block;
-  }
-
-ul {
-  list-style: none;
+.rSectionOne {
+  position: relative;
+  margin-bottom: 1.5rem;
 }
 
-.footerLink {
+.rHead h1 {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+#downloadables {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 6px;
+  padding: 2ch;
+}
+
+#Firstbox, #Secondbox, #Thirdbox {
+  margin-bottom: 2ch;
+}
+
+#Firstbox h2 {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+#Firstbox > p, #Secondbox > p, #Thirdbox > p  {
   font-size: 16px;
-  color: #272822;
-  text-decoration: none;
+  margin-bottom: 2ch;
 }
 
-.footerLink:hover {
-  color: greenyellow;
-  text-decoration: underline;
+.download-btn, .download-btnn, .download-btnnn {
+  min-width: 8rem;
+  display: flex;
+  align-items: center;
+  padding: 2ch;
+  border: none;
+  border-radius: 6px;
+  background: #4e94ce;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  white-space: nowrap;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
 }
 
-.dot {
-  color: #272822;
+.download-btn:hover, .download-btnn:hover, .download-btnnn:hover {
+  background: #272822;
 }
 
+.download-btn.timer, .download-btnn.timer, .download-btnnn.timer{
+  color: #000;
+  background: none;
+  transition: none;
+  font-size: 16px;
+  pointer-events: none;
+ }
 
-
-  @media screen and (max-width: 600px) {
-    #downloadables{
-        display: flex;
-        justify-content: space-around;
-        padding: 10px;
-        margin: 5px;
-        flex-direction: row;
-        justify-content: center;
-    }
-  }
-   @media screen and (min-width: 600px) {
-    #downloadables{
-        display: flex;
-        justify-content: space-around;
-        padding: 10px;
-        margin: 5px;
-        flex-direction: column;
-        justify-content: center;
-    }
-  }
-  @media screen and (min-width: 980px) {
-    #downloadables{
-        display: flex;
-        justify-content: space-around;
-        padding: 10px;
-        margin: 5px;
-        flex-direction: row;
-        justify-content: center;
-    }
-  }
+ .download-btn.timer b, .download-btnn.timer b, .download-btnnn.timer b{
+  color: #55af61;
+  padding: 0 8px;
+ }
