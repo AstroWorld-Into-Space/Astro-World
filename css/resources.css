@@ -21,21 +21,29 @@
   padding: 2ch;
 }
 
-#Firstbox, #Secondbox, #Thirdbox {
+#Firstbox,
+#Secondbox,
+#Thirdbox {
   margin-bottom: 2ch;
 }
 
-#Firstbox h2 {
+#Firstbox h2,
+#Secondbox h2,
+#Thirdbox h2 {
   font-size: 25px;
   font-weight: 700;
 }
 
-#Firstbox > p, #Secondbox > p, #Thirdbox > p  {
+#Firstbox > p,
+#Secondbox > p,
+#Thirdbox > p {
   font-size: 16px;
   margin-bottom: 2ch;
 }
 
-.download-btn, .download-btnn, .download-btnnn {
+.download-btn,
+.download-btnn,
+.download-btnnn {
   min-width: 8rem;
   display: flex;
   align-items: center;
@@ -52,19 +60,46 @@
   transition: all 0.2s ease;
 }
 
-.download-btn:hover, .download-btnn:hover, .download-btnnn:hover {
+.download-btn:hover,
+.download-btnn:hover,
+.download-btnnn:hover {
   background: #272822;
 }
 
-.download-btn.timer, .download-btnn.timer, .download-btnnn.timer{
+.download-btn.timer,
+.download-btnn.timer,
+.download-btnnn.timer {
   color: #000;
   background: none;
   transition: none;
   font-size: 16px;
   pointer-events: none;
- }
+}
 
- .download-btn.timer b, .download-btnn.timer b, .download-btnnn.timer b{
+.download-btn.timer b,
+.download-btnn.timer b,
+.download-btnnn.timer b {
   color: #55af61;
   padding: 0 8px;
- }
+}
+
+@media screen and (max-width: 600px) {
+  .rHead {
+    font-size: 20px;
+  }
+  #Firstbox h2,
+  #Secondbox h2,
+  #Thirdbox h2 {
+    font-size: 20px;
+  }
+  #Firstbox > p,
+  #Secondbox > p,
+  #Thirdbox > p {
+    font-size: 14px;
+  }
+  .download-btn,
+  .download-btnn,
+  .download-btnnn {
+    font-size: 14px;
+  }
+}
