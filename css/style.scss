@@ -106,7 +106,7 @@ body {
 
   .containerWrapper {
     padding: 0 8ch;
-    background-image: url('/Astro-World/images/4740032_38604.jpg');
+    background-image: url("/Astro-World/images/4740032_38604.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 10%;
@@ -306,9 +306,9 @@ body {
 
 footer {
   background-color: #fff;
-    padding: 1ch;
-    max-width: 90ch;
-    border-radius: 6px;
+  padding: 1ch;
+  max-width: 90ch;
+  border-radius: 6px;
 }
 
 @media screen and (min-width: 600px) {
