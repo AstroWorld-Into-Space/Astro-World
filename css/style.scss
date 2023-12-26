@@ -30,6 +30,8 @@ body {
   flex-wrap: nowrap;
   overflow: hidden;
 
+  // ------------- Navigation ---------------
+
   header {
     position: relative;
   }
@@ -54,6 +56,11 @@ body {
     color: #ccccc7;
     border: 0.5px thin #272822;
     text-decoration: none;
+  }
+
+  ul {
+    display: block;
+    list-style-type: none;
   }
 
   .navLinksHome {
@@ -93,128 +100,250 @@ body {
       padding-right: 0.5rem;
     }
   }
+  // Mobile View Header
 
-  .close {
-    font-size: 22px;
-    padding-right: 10px;
-    padding-left: 10px;
+  .mobile-head {
+    display: none;
   }
 
-  .close:hover {
-    background-color: #34352f;
-  }
-
-  .containerWrapper {
-    padding: 0 8ch;
-    background-image: url("/Astro-World/images/4740032_38604.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 10%;
-    background-color: #272822;
-  }
-
-  @media screen and (max-width: 600px) {
-    .containerWrapper {
-      padding-left: 2ch;
-      padding-right: 2ch;
-    }
-  }
-
-  .container {
-    padding-top: 6%;
-    padding-bottom: calc(14rem * 3);
-  }
-
-  main {
-    display: block;
-  }
-
-  // --------------- Section One -----------------
-
-  .sectionOne {
-    position: relative;
-    margin-bottom: 1.5rem;
-  }
-
-  .sectionOneContent {
-    display: flex;
-  }
-
-  @media screen and (min-width: 600px) {
-    #profileFoto {
-      width: 167px;
-      height: 168px;
-      margin-right: 2ch;
-      border-radius: 6px;
-    }
-  }
-
-  @media screen and (max-width: 600px) {
-    #profileFoto {
-      width: 150px;
-      height: 90px;
-      margin-right: 2ch;
-    }
-  }
-
-  .paragraphone h1 {
-    font-size: 20px;
-    font-weight: 800;
-  }
-
-  .profileTitle {
-    font-size: 16px;
-    color: #cfcfc2;
-  }
-
-  @media screen and (min-width: 600px) {
-    .profileBio {
-      font-size: 16px;
-      margin-top: 1.5rem;
-      max-width: 45ch;
-    }
-    .profileBio1 {
+  @media screen and (max-width: 620px) {
+    header .navBar {
       display: none;
     }
-  }
-
-  @media screen and (max-width: 600px) {
-    .profileBio {
-      display: none;
+    header {
+      position: absolute;
+      top: 0rem;
+      left: 0rem;
+      right: 0rem;
+      padding-top: 0rem;
+      padding-bottom: 1rem;
+      background-color: transparent;
+      box-sizing: border-box;
+      z-index: 1100;
     }
-    .profileBio1 {
+    header .mobile-head {
+      position: relative;
+      width: 88%;
+      margin: auto;
+      display: flex;
+      min-height: 3.5rem;
+    }
+    .mobile-logo {
+      width: 60px;
+      height: 55px;
+    }
+    .nav-link {
+      color: #fff !important;
       display: block;
-      font-size: 14px;
-      margin-top: 2ch;
-      max-width: 40ch;
-    }
-    .profileTitle {
-      font-size: 14px;
-    }
-    .paragraphone h1 {
-      font-size: 17.5px;
     }
   }
 
-  .seperator {
+  .openMenu {
+    position: absolute;
+    font-size: 1.8rem;
+    top: 14px;
+    right: 0px;
+    display: none;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .mobile-menu-wrapper {
     display: flex;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    color: greenyellow;
+    align-items: center;
+    justify-content: space-between;
     overflow: hidden;
-    border-width: 0px;
-    height: 1.5rem;
   }
 
-  .seperator::before {
-    content: "//";
-    margin-right: 1ch;
+  .mobile-menu-wrapper .menuList .closeMenu,
+  .icon i {
+    font-size: 1.8rem;
+    display: block;
+    cursor: pointer;
   }
 
-  .seperator::after {
-    content: "-------------------------------------------------------------------------------------------------------";
-    overflow-wrap: anywhere;
+  @media screen and (max-width: 620px) {
+    .mobile-menu-wrapper .menuList {
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      padding-top: 5rem;
+      align-items: flex-start;
+      background-color: #000;
+      transition: top 1s ease;
+      display: none;
+    }
+    .mobile-menu-wrapper .menuList .closeMenu {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      color: #fff;
+    }
+    .mobile-menu-wrapper .openMenu {
+      display: block;
+    }
+    .mobile-menu-wrapper .menuList a:hover {
+      background: none;
+      color: blueviolet;
+      font-size: 1.6rem;
+    }
+    .nav-link {
+      color: #fff !important;
+      display: block;
+    }
   }
+
+  @media screen and (max-width: 620px) {
+    .mobile-menu-wrapper {
+      width: 100%;
+    }
+  }
+
+  @media screen and (min-width: 920px) {
+    .menu {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .nav-link {
+    margin-right: 3rem;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: 11px 8px;
+  }
+
+  .nav-link:hover {
+    background-color: rgba(25, 118, 210, 0.1);
+  }
+
+  ul .nav-link {
+    position: relative;
+    cursor: pointer;
+  }
+}
+
+// ----------------- Structure ----------
+
+.containerWrapper {
+  padding: 0 8ch;
+  background-image: url("/Astro-World/images/4740032_38604.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 10%;
+  background-color: #272822;
+}
+
+@media screen and (max-width: 600px) {
+  .containerWrapper {
+    padding-left: 2ch;
+    padding-right: 2ch;
+  }
+}
+
+.container {
+  padding-top: 6%;
+  padding-bottom: calc(14rem * 3);
+}
+
+@media screen and (max-width: 620px) {
+  .container {
+    padding-top: 35%;
+  }
+}
+
+main {
+  display: block;
+}
+
+// --------------- Section 1 -----------------
+
+.sectionOne {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.sectionOneContent {
+  display: flex;
+}
+
+@media screen and (min-width: 600px) {
+  #profileFoto {
+    width: 167px;
+    height: 168px;
+    margin-right: 2ch;
+    border-radius: 6px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #profileFoto {
+    display: none;
+  }
+}
+
+.paragraphone h1 {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.profileTitle {
+  font-size: 16px;
+  color: #cfcfc2;
+}
+
+@media screen and (min-width: 600px) {
+  .profileBio {
+    font-size: 16px;
+    margin-top: 1.5rem;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .profileBio {
+    display: block;
+    font-size: 14px;
+    margin-top: 2ch;
+    max-width: 40ch;
+  }
+  .profileTitle {
+    font-size: 14px;
+  }
+  .paragraphone h1 {
+    font-size: 17.5px;
+  }
+}
+
+.profileBio1 {
+  margin-top: 1.5rem;
+}
+
+.seperator {
+  display: flex;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: greenyellow;
+  overflow: hidden;
+  border-width: 0px;
+  height: 1.5rem;
+}
+
+.seperator::before {
+  content: "//";
+  margin-right: 1ch;
+}
+
+.seperator::after {
+  content: "-------------------------------------------------------------------------------------------------------";
+  overflow-wrap: anywhere;
 }
 
 // ----------------- Section 2 ----------

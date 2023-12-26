@@ -39,3 +39,11 @@ p {
     font-size: 22px;
     margin-top: 2ch;
 }
+
+#profilePhoto {
+  border-radius: 6px;
+}
+
+.aBio {
+  margin-top: 1.5rem;
+}

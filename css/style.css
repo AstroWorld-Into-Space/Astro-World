@@ -51,6 +51,10 @@ body {
   border: 0.5px thin #272822;
   text-decoration: none;
 }
+#mainWrapper ul {
+  display: block;
+  list-style-type: none;
+}
 #mainWrapper .navLinksHome {
   background-color: #272822;
   color: white;
@@ -84,15 +88,124 @@ body {
     padding-right: 0.5rem;
   }
 }
-#mainWrapper .close {
-  font-size: 22px;
-  padding-right: 10px;
-  padding-left: 10px;
+#mainWrapper .mobile-head {
+  display: none;
 }
-#mainWrapper .close:hover {
-  background-color: #34352f;
+@media screen and (max-width: 620px) {
+  #mainWrapper header .navBar {
+    display: none;
+  }
+  #mainWrapper header {
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    right: 0rem;
+    padding-top: 0rem;
+    padding-bottom: 1rem;
+    background-color: transparent;
+    box-sizing: border-box;
+    z-index: 1100;
+  }
+  #mainWrapper header .mobile-head {
+    position: relative;
+    width: 88%;
+    margin: auto;
+    display: flex;
+    min-height: 3.5rem;
+  }
+  #mainWrapper .mobile-logo {
+    width: 60px;
+    height: 55px;
+  }
+  #mainWrapper .nav-link {
+    color: #fff !important;
+    display: block;
+  }
 }
-#mainWrapper .containerWrapper {
+#mainWrapper .openMenu {
+  position: absolute;
+  font-size: 1.8rem;
+  top: 14px;
+  right: 0px;
+  display: none;
+  color: #fff;
+  cursor: pointer;
+}
+#mainWrapper .mobile-menu-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+#mainWrapper .mobile-menu-wrapper .menuList .closeMenu,
+#mainWrapper .icon i {
+  font-size: 1.8rem;
+  display: block;
+  cursor: pointer;
+}
+@media screen and (max-width: 620px) {
+  #mainWrapper .mobile-menu-wrapper .menuList {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5rem;
+    align-items: flex-start;
+    background-color: #000;
+    transition: top 1s ease;
+    display: none;
+  }
+  #mainWrapper .mobile-menu-wrapper .menuList .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+  }
+  #mainWrapper .mobile-menu-wrapper .openMenu {
+    display: block;
+  }
+  #mainWrapper .mobile-menu-wrapper .menuList a:hover {
+    background: none;
+    color: blueviolet;
+    font-size: 1.6rem;
+  }
+  #mainWrapper .nav-link {
+    color: #fff !important;
+    display: block;
+  }
+}
+@media screen and (max-width: 620px) {
+  #mainWrapper .mobile-menu-wrapper {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 920px) {
+  #mainWrapper .menu {
+    display: flex;
+    align-items: center;
+  }
+}
+#mainWrapper .nav-link {
+  margin-right: 3rem;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  padding: 11px 8px;
+}
+#mainWrapper .nav-link:hover {
+  background-color: rgba(25, 118, 210, 0.1);
+}
+#mainWrapper ul .nav-link {
+  position: relative;
+  cursor: pointer;
+}
+
+.containerWrapper {
   padding: 0 8ch;
   background-image: url("/Astro-World/images/4740032_38604.jpg");
   background-repeat: no-repeat;
@@ -100,28 +213,38 @@ body {
   background-position: 10%;
   background-color: #272822;
 }
+
 @media screen and (max-width: 600px) {
-  #mainWrapper .containerWrapper {
+  .containerWrapper {
     padding-left: 2ch;
     padding-right: 2ch;
   }
 }
-#mainWrapper .container {
+.container {
   padding-top: 6%;
   padding-bottom: 42rem;
 }
-#mainWrapper main {
+
+@media screen and (max-width: 620px) {
+  .container {
+    padding-top: 35%;
+  }
+}
+main {
   display: block;
 }
-#mainWrapper .sectionOne {
+
+.sectionOne {
   position: relative;
   margin-bottom: 1.5rem;
 }
-#mainWrapper .sectionOneContent {
+
+.sectionOneContent {
   display: flex;
 }
+
 @media screen and (min-width: 600px) {
-  #mainWrapper #profileFoto {
+  #profileFoto {
     width: 167px;
     height: 168px;
     margin-right: 2ch;
@@ -129,48 +252,46 @@ body {
   }
 }
 @media screen and (max-width: 600px) {
-  #mainWrapper #profileFoto {
-    width: 150px;
-    height: 90px;
-    margin-right: 2ch;
+  #profileFoto {
+    display: none;
   }
 }
-#mainWrapper .paragraphone h1 {
+.paragraphone h1 {
   font-size: 20px;
   font-weight: 800;
 }
-#mainWrapper .profileTitle {
+
+.profileTitle {
   font-size: 16px;
   color: #cfcfc2;
 }
+
 @media screen and (min-width: 600px) {
-  #mainWrapper .profileBio {
+  .profileBio {
     font-size: 16px;
     margin-top: 1.5rem;
-    max-width: 45ch;
-  }
-  #mainWrapper .profileBio1 {
-    display: none;
+    width: 100%;
   }
 }
 @media screen and (max-width: 600px) {
-  #mainWrapper .profileBio {
-    display: none;
-  }
-  #mainWrapper .profileBio1 {
+  .profileBio {
     display: block;
     font-size: 14px;
     margin-top: 2ch;
     max-width: 40ch;
   }
-  #mainWrapper .profileTitle {
+  .profileTitle {
     font-size: 14px;
   }
-  #mainWrapper .paragraphone h1 {
+  .paragraphone h1 {
     font-size: 17.5px;
   }
 }
-#mainWrapper .seperator {
+.profileBio1 {
+  margin-top: 1.5rem;
+}
+
+.seperator {
   display: flex;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
@@ -179,11 +300,13 @@ body {
   border-width: 0px;
   height: 1.5rem;
 }
-#mainWrapper .seperator::before {
+
+.seperator::before {
   content: "//";
   margin-right: 1ch;
 }
-#mainWrapper .seperator::after {
+
+.seperator::after {
   content: "-------------------------------------------------------------------------------------------------------";
   overflow-wrap: anywhere;
 }
