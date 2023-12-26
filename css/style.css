@@ -112,6 +112,7 @@ body {
     margin: auto;
     display: flex;
     min-height: 3.5rem;
+    padding-top: 0.5rem;
   }
   #mainWrapper .mobile-logo {
     width: 60px;
@@ -276,7 +277,6 @@ main {
 @media screen and (max-width: 600px) {
   .profileBio {
     display: block;
-    font-size: 14px;
     margin-top: 2ch;
     max-width: 40ch;
   }
@@ -432,4 +432,10 @@ ul {
 
 .dot {
   color: #272822;
+}
+
+.copyright {
+  width: 100%;
+  margin-top: 1.5rem;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
