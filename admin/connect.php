@@ -1,6 +1,6 @@
 <?php
 
-$conn = mysqli_connect('localhost','root','','babyyo_store');
+$conn = mysqli_connect('localhost','root','','astro_world');
 
 if(!$conn)
 {
