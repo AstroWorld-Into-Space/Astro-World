@@ -249,9 +249,24 @@ body {
 #mainWrapper label:active::after {
   width: 20px;
 }
-#mainWrapper .containerWrapper.dark-theme {
+#mainWrapper .containerWrapper.light-theme {
   background: #ffffff;
+  color: #24292e;
+}
+#mainWrapper .profileTitleLink1.light-theme {
+  color: #032f62;
+}
+#mainWrapper .profileTitleLink2.light-theme {
+  color: #032f62;
+}
+#mainWrapper .seperator.light-theme {
+  color: #6a737d;
+}
+#mainWrapper .openMenu.light-theme {
   color: #000;
+}
+#mainWrapper .profileTitle.light-theme {
+  color: #24292e;
 }
 
 .containerWrapper {

@@ -281,9 +281,29 @@ body {
     width: 20px;
   }
 
-  .containerWrapper.dark-theme {
+  .containerWrapper.light-theme {
     background: #ffffff;
+    color: #24292e;
+  }
+
+  .profileTitleLink1.light-theme {
+    color: #032f62;
+  }
+
+  .profileTitleLink2.light-theme {
+    color: #032f62;
+  }
+
+  .seperator.light-theme {
+    color: #6a737d;
+  }
+
+  .openMenu.light-theme {
     color: #000;
+  }
+
+  .profileTitle.light-theme {
+    color: #24292e;
   }
 }
 
