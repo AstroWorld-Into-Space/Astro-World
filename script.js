@@ -26,15 +26,6 @@ const seperator = document.querySelector('.seperator');
 const profileTitle = document.querySelector('.profileTitle')
 
 toggle.addEventListener('click', () => {
-<<<<<<< HEAD
-    body.classList.toggle('light-theme');
-    profileTitleLink1.classList.toggle('light-theme');
-    profileTitleLink2.classList.toggle('light-theme');
-    seperator.classList.toggle('light-theme');
-    openMenu.classList.toggle('light-theme');
-    profileTitle.classList.toggle('light-theme');
-});
-=======
     body.classList.toggle('dark-theme');
 });
 
@@ -64,4 +55,3 @@ var loader = document.getElementById("preloader");
 window.addEventListener("load", function(){
     loader.style.display = "none";
 })
->>>>>>> 7c3a02f635375ae6d0225fa05337e02f1c6eed6c
