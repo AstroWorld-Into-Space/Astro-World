@@ -67,6 +67,9 @@ const cookieBox = document.querySelector(".cook-wrapper");
 const buttons = document.querySelectorAll(".c-button");
 
 const executeCode = () =>{
+    //if the cookie contains AstroWorld, the code will be ruturned and the code below will not run
+    if (document.cookie.includes("AstroWorld")) return;
+
     cookieBox.classList.add("show");
 
     buttons.forEach(button => {
@@ -75,8 +78,8 @@ const executeCode = () =>{
 
             //if the button contains acceptBtn
             if (button.id == "acceptBtn"){
-                //set cookie for 1 month
-                
+                //set cookie for 1 month. 60 = 1 min, 60 = 1 hour, 24 = 1 day, 30 = 30 days
+                document.cookie = "cookieBy = AstroWorld; max-age=" + 60 * 60 * 24 * 30;
             }
         })
     })
