@@ -60,3 +60,28 @@ var loader = document.getElementById("preloader");
 window.addEventListener("load", function(){
     loader.style.display = "none";
 })
+
+//Cookies
+
+const cookieBox = document.querySelector(".cook-wrapper");
+const buttons = document.querySelectorAll(".c-button");
+
+const executeCode = () =>{
+    cookieBox.classList.add("show");
+
+    buttons.forEach(button => {
+        button.addEventListener("click", () => {
+            cookieBox.classList.remove("show");
+
+            //if the button contains acceptBtn
+            if (button.id == "acceptBtn"){
+                //set cookie for 1 month
+                
+            }
+        })
+    })
+}
+
+
+//will execute the code
+window.addEventListener("load",executeCode);

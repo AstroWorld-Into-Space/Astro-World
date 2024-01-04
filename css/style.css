@@ -543,3 +543,67 @@ ul {
     text-align: center;
   }
 }
+/* loading effect  */
+
+/* cookies  */
+.cook-wrapper{
+position: fixed;
+bottom: 50px;
+right: -370px;
+max-width: 345px;
+width: 100%;
+background-color: #454545;
+color: #fff;
+border-radius: 10px;
+padding: 15px 25px 22px;
+transition: right 2s ease;
+}
+.cook-wrapper.show{
+  right: 20px;
+}
+.cook-wrapper .head-cookie{
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+.head-cookie i{
+  color: #4ece57;
+  font-size: 32px;
+}
+.head-cookie h2{
+  color: #4ece57;
+  font-weight: 500;
+}
+.cook-wrapper .cook-data{
+  margin-top: 16px;
+}
+.cook-wrapper .cook-data p{
+  color: #ccccc7;
+  font-size: 16px;
+}
+.cook-data p a{
+  text-decoration: none;
+}
+.cook-data p a:hover{
+  text-decoration: underline;
+}
+.cook-wrapper .c-buttons{
+  margin-top: 16px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.c-buttons .c-button{
+  border: none;
+  color: #fff;
+  padding: 10px 15%;
+  border-radius: 4px;
+  background: #4ece57;
+  cursor: pointer;
+  width: calc(100% / 2 -10px);
+  transition: all 0.5s ease;
+}
+.c-buttons .c-button:hover{
+  background: #3c8141;
+}
